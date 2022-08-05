@@ -81,7 +81,7 @@ GetTPM <- function(counts,len) {
   return(t(t(x)*1e6/colSums(x)))
 }
 
-tpm = log2( GetTPM(expr_gene,size) + 1 )
+tpm = log2( GetTPM(expr_gene,size) + 0.001 )
 
 
 ##################################
